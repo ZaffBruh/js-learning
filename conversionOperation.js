@@ -61,6 +61,10 @@ console.log(1+1+"b"+2);
 console.log("c"+1+1);
 */
 
-console.log(+true);
-console.log(-true);
-console.log(+false);
+//console.log(+true);
+//console.log(-true);
+//console.log(+false);
+
+let gameCounter = 100;
+gameCounter++;
+console.log(gameCounter);
