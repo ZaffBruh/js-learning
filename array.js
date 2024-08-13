@@ -58,7 +58,7 @@ const dc_heroes = ["superman", "batman", "flash"]
 //const all_heroes = marvel_heroes.concat(dc_heroes)
 //console.log(all_heroes);
 
-const all_new_heroes = [...marvel_heroes, ...dc_heroes]
+const all_new_heroes = [...marvel_heroes, ...dc_heroes] //spread
 console.log(all_new_heroes);
 
 const anotherArr = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4,5]]]
