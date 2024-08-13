@@ -45,3 +45,32 @@ function adds(num1, num2){
     return console.log(num1 + num2);
 }
 adds(2,3)
+
+//++++++++++++++++++++++++++++++++++++++++
+
+function calculateCartPrice(...num){
+    return num;
+}
+console.log(calculateCartPrice(2, 3));
+
+const user = {
+    username: "zarif",
+    price: 99
+
+}
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and the price is ${anyobject.price}`);
+}
+//handleObject(user)
+handleObject({
+    username: "khan",
+    price: 500
+})
+
+const myNewArray = [100, 200, 300]
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+//console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([10,20,30,40]));
