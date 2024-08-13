@@ -40,3 +40,8 @@ function loginUserMessage(username = "zaff"){
 }
 console.log(loginUserMessage("Zarif"))
 console.log(loginUserMessage())
+
+function adds(num1, num2){
+    return console.log(num1 + num2);
+}
+adds(2,3)
