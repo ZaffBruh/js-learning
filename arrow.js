@@ -71,3 +71,6 @@ console.log(AddTwo(2,6));
 
 const AddThree = (num1, num2, num3) => ({username: "zarif"})  //we need to wrap the object for returning
 console.log(AddThree(1,2,3));
+
+const myArr = [1,2,3,4]
+myArr.forEach(() => ({}))
