@@ -17,6 +17,10 @@ const mahi2 = () => {
 }
 mahi2();
 
+const mahi4 = function(){
+    console.log();
+}
+
 let mahi3 = () => console.log("big");
 mahi3()
 
@@ -25,3 +29,6 @@ if (true){
 }
 
 (true) ? console.log("") : console.log("2");
+
+(() => console.log("zarif the greatest")) ();
+
