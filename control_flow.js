@@ -144,3 +144,6 @@ console.log(val4);
 
 const iceTeaPrice = 100
 iceTeaPrice >= 80 ? console.log("more than 80") : console.log("less than 80")
+
+const mail = "zarif@gmail.com"
+mail ? console.log("there is a email") : console.log("there is no mail");
