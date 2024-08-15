@@ -18,11 +18,11 @@ function one(){
     console.log("one");
     two()
 }
-function two(){
+const two = () => {
     console.log("two");
     three()
 }
-function three(){
+const three = function(){
     console.log("three");
 }
 
