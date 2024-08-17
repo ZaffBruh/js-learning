@@ -88,3 +88,4 @@ const notunNum = myNumbers              //chaining
                 })
 
 console.log(notunNum);
+
