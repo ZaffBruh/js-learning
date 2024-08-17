@@ -69,3 +69,22 @@ const Numbers = myNumbers.map((num) => {
 })
 
 console.log(Numbers);
+
+const value = [1, 2, 3, 4, 5]
+
+value.forEach((num) => {
+    console.log(`value${num} = ${num+10}`);
+})
+
+const notunNum = myNumbers              //chaining
+                .map((num) => {
+                    return num * 10
+                })
+                .map((num) => {
+                    return num + 1
+                })
+                .filter((num) => {
+                    return num >= 40
+                })
+
+console.log(notunNum);
