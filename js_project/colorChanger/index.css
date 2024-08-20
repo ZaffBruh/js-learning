@@ -3,13 +3,22 @@ body {
     color: white;
 }
 
+.head {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1rem solid red;
+    font-family: monospace;
+    font-size: 2rem;
+}
+
 .box {
+    border: 2rem solid orange;
     margin: auto;
     display: flex;
     width: 100px;
     height: 100px;
-   justify-content: center;
-   align-items: center;
-   border: red;
-   
+    justify-content: center;
+    align-items: center;
 }
