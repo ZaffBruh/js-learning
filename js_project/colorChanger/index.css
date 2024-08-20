@@ -24,10 +24,79 @@ body {
 .box1 {
     margin: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: .2rem solid white;
     width: 300px;
     height: 300px;
     color: white;
     font-family: monospace;
     font-size: 2rem;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    background-color: green;
+}
+
+.box2 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid white;
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    background-color: red;
+}
+
+.box3 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid white;
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    background-color: blue;
+}
+
+.box4 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid white;
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    background-color: orangered;
+}
+
+.box1:hover {
+    transform: scale(1.1);
+}
+
+.box2:hover {
+    transform: scale(1.1);
+}
+
+.box3:hover {
+    transform: scale(1.1);
+}
+
+.box4:hover {
+    transform: scale(1.1);
 }
