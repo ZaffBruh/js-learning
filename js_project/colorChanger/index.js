@@ -9,5 +9,14 @@ buttons.forEach((button) => {
         if(e.target.id === "g"){
             body.style.backgroundColor = "green"
         }
+        if(e.target.id === "r"){
+            body.style.backgroundColor = "red"
+        }
+        if(e.target.id === "b"){
+            body.style.backgroundColor = "blue"
+        }
+        if(e.target.id === "o"){
+            body.style.backgroundColor = "orangered"
+        }
     })
 })
