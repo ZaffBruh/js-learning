@@ -100,3 +100,23 @@ body {
 .box4:hover {
     transform: scale(1.1);
 }
+
+.reset {
+    border: .2rem solid brown;
+    font-family: monospace;
+    font-size: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.reset:hover {
+    transform: scale(1.1);
+}
