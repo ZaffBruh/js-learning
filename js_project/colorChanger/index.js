@@ -18,5 +18,8 @@ buttons.forEach((button) => {
         if(e.target.id === "o"){
             body.style.backgroundColor = "orangered"
         }
+        if(e.target.id === "reset"){
+            body.style.backgroundColor = "black"
+        }
     })
 })
