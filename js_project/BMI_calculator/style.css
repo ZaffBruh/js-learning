@@ -10,20 +10,12 @@ body {
     align-items: center;
 }
 
-.box1 {
+.box {
     font-size: 2rem;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.box2 {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
 }
 
 input {

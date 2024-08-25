@@ -7,10 +7,10 @@ const form = document.querySelector("form")
 // const btn = document.querySelector(button);
 // const result = document.querySelector("#output")
 
-
 form.addEventListener("submit",function (e){
     e.preventDefault()
 
+    const name = document.querySelector("#name").value
     const height = parseInt(document.querySelector("#height").value)
     const weight = parseInt(document.querySelector("#weight").value)
     const output = document.querySelector("#output")
@@ -27,15 +27,15 @@ form.addEventListener("submit",function (e){
     else {
         const bmi = (weight/((height*height)/10000)).toFixed(2)
         //show the output
-        output.innerHTML = bmi
+        output.innerHTML = `${name}'s bmi is ${bmi}.`
         if(bmi<18.6){
-            output2.innerHTML = "You are under weight"
+            output2.innerHTML = "You are under weight."
         }
         else if(bmi >= 18.6 && bmi <= 24.9){
             output2.innerHTML = "You are normal. Keep it up."
         }
         else if(bmi > 24.9){
-            output2.innerHTML = "You are overweight"
+            output2.innerHTML = "You are overweight."
         }
     }
     
