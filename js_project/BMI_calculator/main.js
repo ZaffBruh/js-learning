@@ -17,11 +17,15 @@ form.addEventListener("submit",function (e){
     const output2 = document.querySelector("#output2")
 
     if(height === "" || height < 0 || isNaN(height)){
-        output.innerHTML="Please give a valid height"
+        output.innerHTML="Please give a valid height."
     }
     
     else if(weight === "" || weight < 0 || isNaN(weight)){
-        output.innerHTML="Please give a valid weight"
+        output.innerHTML="Please give a valid weight."
+    }
+    
+    else if(name === "" ||  !isNaN(name)){
+        output.innerHTML="Please give a valid name."
     }
     
     else {
