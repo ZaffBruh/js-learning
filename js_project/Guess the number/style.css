@@ -99,17 +99,19 @@ input {
     margin-left: 10px;
 }
 
-#bttn {
+#white {
     height: 30px;
     width: 30px;
     margin-left: 10px;
+    border: 2px solid black;
 }
 
-#bttn1 {
+#black {
     height: 30px;
     width: 30px;
     margin-left: 10px;
-    background-color: green;
+    background-color: black;
+    border: 2px solid white;
 }
 
 .bg {
