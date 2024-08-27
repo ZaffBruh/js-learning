@@ -54,7 +54,7 @@ input {
     margin-bottom: 10px;
 }
 
-button {
+#btn {
     padding: 10px;
     font-size: 20px;
     text-align: center;
@@ -63,7 +63,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#btn:hover {
     background-color: yellowgreen;
 }
 
@@ -97,4 +97,17 @@ button:hover {
     padding: 5px;
     border-radius: 5px;
     margin-left: 10px;
+}
+
+#bttn {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
 }
