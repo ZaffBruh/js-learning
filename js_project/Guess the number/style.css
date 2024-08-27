@@ -105,6 +105,13 @@ input {
     margin-left: 10px;
 }
 
+#bttn1 {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    background-color: green;
+}
+
 .bg {
     display: flex;
     justify-content: center;
