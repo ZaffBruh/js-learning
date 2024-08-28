@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2rem solid red;
+    /* border: 2rem solid red; */
 }
 
 .hd {
@@ -31,9 +31,10 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-left: 100px;
-    border: 1rem solid yellowgreen;
+    /* border: 1rem solid yellowgreen; */
     border-radius: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .center {

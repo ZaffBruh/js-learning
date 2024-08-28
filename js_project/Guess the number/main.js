@@ -11,5 +11,11 @@ bg.forEach((bg) => {
             body.style.backgroundColor = "black";
             body.style.color = "white";
         }
+        if(e.target.id === "red"){
+            body.style.fontFamily = "courier";
+        }
+        if(e.target.id === "yellow"){
+            body.style.fontFamily = "cursive";
+        }   
     })
 })
