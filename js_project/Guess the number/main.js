@@ -22,7 +22,7 @@ bg.forEach((bg) => {
 
 // +++++++++++ guessing number script ++++++++++++++++
 
-const randomNum = parseInt(Math.random() * 100 + 1);
+let randomNum = parseInt(Math.random() * 100 + 1);
 
 const submit = document.querySelector("#btn")
 const userInput = document.querySelector("#input")
@@ -103,6 +103,7 @@ function newGame(){
         prevGuess = []
         numGuess = 1
         previousGuesses.innerHTML = ""
+        displayMsg.innerHTML = ""
         remainGuess.innerHTML = `${11 - numGuess}`
         userInput.removeAttribute("disabled");
         startOver.removeChild(p)
@@ -114,8 +115,8 @@ function endGame(){
     userInput.value = "";
     userInput.setAttribute("disabled", "");
     p.classList.add("button");
-    p.innerHTML = `<button id="newGame">Start New Game</button>`;
+    p.innerHTML = `<button style="font-size:20px; padding: 10px  10px; border-radius:50px;" id="newGame">Start New Game</button>`;
     startOver.appendChild(p);
     playGame = false;
-    newGame()
+    newGame();
 }
