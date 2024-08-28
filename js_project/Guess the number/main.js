@@ -59,7 +59,7 @@ function validateGuess(guess){
     }
     else{
         prevGuess.push(guess)
-        if(numGuess === 11){
+        if(numGuess === 10){
             displayGuess(guess)
             displayMsg(`Game Over. Random number was ${randomNum}`)
             endGame()
@@ -72,21 +72,50 @@ function validateGuess(guess){
 }
 
 function checkGuess(guess){
-
+    if(guess === randomNum){
+        displayMsg("Congratulations! You guessed it right.")
+        endGame()
+    }
+    else if(guess < randomNum){
+        displayMsg("Your guess is low")
+    }
+    else if(guess > randomNum){
+        displayMsg("Your guess is high")
+    }
 }
 
 function displayGuess(guess){
-
+    userInput.value = ""
+    previousGuesses.innerHTML += `${guess}, `
+    numGuess++;
+    remainGuess.innerHTML = `${11 - numGuess}` 
 }
 
 function displayMsg(msg){
-
+    lowOrHigh.innerHTML = `${msg}`
 }
 
 function newGame(){
+    const newGameButton = document.querySelector("#newGame")
 
+    newGameButton.addEventListener("click", function(e){
+        randomNum = parseInt(Math.random() * 100 + 1)
+        prevGuess = []
+        numGuess = 1
+        previousGuesses.innerHTML = ""
+        remainGuess.innerHTML = `${11 - numGuess}`
+        userInput.removeAttribute("disabled");
+        startOver.removeChild(p)
+        playGame = true
+    })
 }
 
 function endGame(){
-
+    userInput.value = "";
+    userInput.setAttribute("disabled", "");
+    p.classList.add("button");
+    p.innerHTML = `<button id="newGame">Start New Game</button>`;
+    startOver.appendChild(p);
+    playGame = false;
+    newGame()
 }
