@@ -23,17 +23,30 @@
     </div>
 </body>
 <script>
-    // document.getElementById("tortoise").onclick = function(){
-    //     alert("tortoise")
-    // }
 
-    document.getElementById("images").addEventListener("click", function(){
-        alert("clicked")
+    // document.getElementById("tortoise").addEventListener("click", function(e){
+    //     alert("tortoise clicked")
+    //     e.stopPropagation()
+    // }, false)
+    
+    // document.getElementById("images").addEventListener("click", function(e){
+    //     alert("clicked")
+    //     e.stopPropagation()
+    // })
+
+    document.getElementById("google").addEventListener("click", function(e){
+        e.preventDefault()
+        e.stopPropagation()
     })
 
-    document.getElementById("tortoise").addEventListener("click", function(){
-        alert("tortoise clicked")
-    }, false)
+    document.getElementById("images").addEventListener("click", function(e){
+        
+        if(e.target.tagName === "IMG"){
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    })
+
     
 </script>
 </html>
