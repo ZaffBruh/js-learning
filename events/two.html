@@ -22,7 +22,7 @@
         console.log("zarif");
     },2000)
     
-    setInterval(name,3000)
+    let intervalName = setInterval(name,3000)
 
     // document.querySelector("h1").innerHTML = "zarif khan"
 
@@ -36,6 +36,7 @@
 
     document.getElementById("stop").addEventListener("click", function(e){
         clearTimeout(changeMe)
+        clearInterval(intervalName)
         console.log("stopped");
 
         let h1 = document.querySelector("h1")
