@@ -33,6 +33,12 @@
 
     document.getElementById("stop").addEventListener("click", function(e){
         clearTimeout(changeMe)
+        console.log("stopped");
+
+        let h1 = document.querySelector("h1")
+        if(h1.innerHTML === "Zarif Khan"){
+            document.querySelector("h1").innerHTML = "yolo"
+        }
     })
 </script>
 </html>
