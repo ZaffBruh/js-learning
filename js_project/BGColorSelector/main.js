@@ -9,12 +9,17 @@ const randomColor = function(){
     return color
 }
 
+let set;
+
 document.getElementById("start").addEventListener("click",function(){
+    if(set == null){
     set = setInterval(function(){
         document.body.style.backgroundColor = randomColor()
     },2000)
+    }
 })
 
 document.getElementById("stop").addEventListener("click",function(){
     clearInterval(set)
+    set = null
 })
