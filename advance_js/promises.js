@@ -73,3 +73,35 @@ async function consumePromiseFive(){
     }
 }
 consumePromiseFive()
+
+//fetch
+
+// async function getAllUsers(){
+//     try {
+//         const response = await fetch("https://api.github.com/users/zaffbruh")
+//         // console.log(response);
+//         const data = await response.json()
+//         console.log(data);
+//     } catch (error) {
+//         console.log("E: ",error);
+//     }
+// }
+// getAllUsers()
+
+//in then-catch format
+
+const promiseSix = new Promise(function(resolve,reject){
+    let error = false
+    if(!error){
+        resolve(fetch("https://api.github.com/users/zaffbruh"))
+    }else{
+        reject("Error occured")
+    }
+})
+promiseSix.then(function(u){
+    console.log(u);
+}).catch(function(e){
+    console.log("E: ",e);
+}).finally(function(){
+    console.log("Promise has been resolved or rejected");
+})
