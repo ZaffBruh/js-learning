@@ -21,3 +21,32 @@ new Promise(function(resolve,reject){
 }).then(function(){
     console.log("async two is resolved");
 })
+
+const promiseThree = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve({username: "chai", email: "chai@example.com"})
+    },1000)
+})
+
+promiseThree.then(function(user){
+    console.log(user);
+})
+
+const promiseFour = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = false
+        if(!error){
+            resolve({username: "zarif", password: "123"})
+        } else{
+            reject("Error! Something went wrong.")
+        }
+    },1000)
+})
+promiseFour.then((r) => {
+    console.log(r);
+    return r.username
+}).then(function(user){
+    console.log(user);
+}).catch(function(error){
+    console.log(error);
+})
