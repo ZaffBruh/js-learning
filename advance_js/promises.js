@@ -49,4 +49,27 @@ promiseFour.then((r) => {
     console.log(user);
 }).catch(function(error){
     console.log(error);
+}).finally(function(){
+    console.log("the promise is either resolved or rejected");
 })
+
+//try-catch syntax
+
+let promiseFive = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = true
+        if(!error){
+            resolve({username: "khan", password: "123"})
+        }else{
+            reject("An error has been occured ")
+        }
+    },1000)
+})
+async function consumePromiseFive(){
+    try {
+        const response = await promiseFive
+    } catch (error) {
+        console.log(error);
+    }
+}
+consumePromiseFive()
