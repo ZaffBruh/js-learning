@@ -54,7 +54,7 @@ teacher.__proto__ = user
 
 Object.setPrototypeOf(teacherSupport, teacher)
 
-/////// prototype
+/////// prototype 
 
 let anotherUser = "khan   "
 
