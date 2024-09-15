@@ -7,7 +7,8 @@
     <title>closure</title>
 </head>
 <body style="background-color: black; color: white;">
-    
+    <button id="orange">orange</button>
+    <button id="green">green</button>
 </body>
 <script>
     // function init(){
@@ -16,25 +17,45 @@
     //     function displayName(){
     //         console.log(name);
     //     }
-    //     displayName()
+    //     return displayName;
     // }
-    // init()
+    
+    // const myFunc = init()
+    // myFunc()
 
-    function outer(){
-        let username = "zarif"
+    // function outer(){
+    //     let username = "zarif"
 
-        function inner(){
-            let mySecret = "abc123"
-            console.log(username);
+    //     function inner(){
+    //         let mySecret = "abc123"
+    //         console.log(username);
+    //     }
+    //     function innerTwo(){
+    //         console.log(username, "two");
+    //         console.log(mySecret);
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);
+</script>
+<script>
+    // document.getElementById("orange").addEventListener("click", function(){
+    //     document.body.style.backgroundColor = "orange"
+    // })
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = "green"
+    // }
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`
+        return function(){
+            document.body.style.backgroundColor = `${color}`
         }
-        function innerTwo(){
-            console.log(username, "two");
-            console.log(mySecret);
-        }
-        inner()
-        innerTwo()
     }
-    outer()
-    console.log("TOO OUTER", username);
+
+    document.getElementById("orange").onclick = clickHandler("orange")
+    document.getElementById("green").onclick = clickHandler("green")
 </script>
 </html>
