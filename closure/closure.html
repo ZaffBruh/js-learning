@@ -24,9 +24,15 @@
         let username = "zarif"
 
         function inner(){
+            let mySecret = "abc123"
             console.log(username);
         }
+        function innerTwo(){
+            console.log(username, "two");
+            console.log(mySecret);
+        }
         inner()
+        innerTwo()
     }
     outer()
     console.log("TOO OUTER", username);
