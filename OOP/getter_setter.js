@@ -23,3 +23,5 @@ const zarif = new User ("zarif@ai", "abc")
 console.log(zarif);
 console.log(zarif.password);
 console.log(zarif.email);
+
+// Javascript's core concept has been done from here
